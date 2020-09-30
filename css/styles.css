@@ -32,6 +32,7 @@ ul {
 
 /* Navegacion */
 .nav-principal {
+    z-index: 5;
     font-size: 17px;
     display: flex;
     align-items: center;
@@ -67,7 +68,7 @@ ul {
     cursor: pointer;
     top: 15px;
     right: 30px;
-    z-index: 2;
+    z-index: 5;
     font-size: 1.5rem;
     display: none;
 }
@@ -254,8 +255,8 @@ form textarea {
 }
 
 .foto img {
-    width: 500px;
-    height: 500px;
+    width: 50%;
+    height: 50%;
     margin-top: 10px;
     margin-bottom: 10px; 
 }
@@ -285,6 +286,7 @@ form textarea {
         opacity: .9;
         transform: translateX(-400px); 
         transition: transform .5s ease-in-out; 
+        z-index: 5;
     }
 
     .nav-principal ul.nav-menu.show {
