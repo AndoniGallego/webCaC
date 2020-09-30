@@ -1,0 +1,330 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #3a6186;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color:#ffff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+}
+
+/* Navegacion */
+.nav-principal {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-logo {
+    width:100px;
+}
+
+/* Navegacion Izquierda */
+.nav-principal ul {
+    display: flex;
+}
+
+.nav-principal ul li {
+    padding: 10px;
+}
+
+.nav-principal ul.nav-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.nav-principal ul li a:hover {
+    border-bottom: 2px solid #c94b4b;
+}
+
+.menuBoton {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.5rem;
+    display: none;
+}
+
+/* Principal */
+hr {
+    margin: 10px 0;
+}
+
+.principal {
+    width: 100%;
+    height: 550px;
+    background: url("../img/cartas/CartaPrincipal.jpg") center/cover;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: rgb(255, 255, 255);
+}
+
+/* Cartas */
+.nuevas-cartas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+}
+
+.nuevas-cartas img {
+    width: 100%;
+    height: 180px;
+}
+
+.nuevas-cartas h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.nuevas-cartas a {
+    padding: 10px 0;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.nuevas-cartas a:hover {
+    text-decoration: underline;
+}
+
+.zoom
+{
+ transition: transform .5s;
+}
+.zoom:hover
+{
+ transform: scale(1.05);
+}
+
+.bannerCartas2 .content {
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: #ffffff;
+}
+
+/* Redes Sociales */
+.redes {
+    margin: 30px;
+    padding-top: 50px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 30px;
+}
+
+.links a i {
+    font-size: 3.5rem;
+}
+
+/* Footer */
+footer {
+    background: #2f3640;
+    color: #8b8989;
+    font-size: 12px;
+    padding: 15px 5px;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+}
+
+/* Formulario de Contacto */
+form {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+form h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+form input, textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: none;
+}
+
+form textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.botonEnviar {
+    background: #324253;
+    color: #fff;
+    padding: 20px;
+}
+
+.botonEnviar:hover {
+    cursor: pointer;
+}
+
+.botonZoom {
+    transition: transform .3s;
+}
+
+.botonZoom:hover {
+    transform: scale(1.03);
+}
+
+/* Acerca De */
+
+.bloqueInfo {
+    text-align: center;
+}
+
+.info {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.info img {
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    width: 60%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+
+/* Fotos exposicion */
+
+.foto {
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.foto img {
+    width: 500px;
+    height: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+.descargar {
+    font-size: 3rem;
+    color:#bebfc0;
+}
+
+/* Responsive */
+
+/* 700Px */
+@media (max-width: 700px) {
+
+    .menuBoton {
+        display: block;
+    }
+
+    .nav-principal ul.nav-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 100%;
+        padding: 30px;
+        opacity: .9;
+        transform: translateX(-400px); 
+        transition: transform .5s ease-in-out; 
+    }
+
+    .nav-principal ul.nav-menu.show {
+        transform: translateX(-20px);
+    }
+
+    .nav-principal ul.nav-menu-derecha {
+        margin-right: 40px;
+    }
+
+    .nav-principal ul.nav-menu li {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .nuevas-cartas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+/* 500Px */
+@media (max-width: 500px) {
+
+    .menuBoton {
+        display: block;
+    }
+
+    .nuevas-cartas {
+        grid-template-columns: 1fr;
+    }  
+    
+    .nuevas-cartas img {
+        height: 270px;
+    }
+    
+    form {
+        width: 100%;
+    }
+}
